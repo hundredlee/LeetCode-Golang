@@ -18,16 +18,16 @@ func main() {
 	  原因：349 + 465 = 814
 	*/
 	// 003
-	l1 := &_03.ListNode{Val:9}
-	l1.Next = &_03.ListNode{Val:4}
-	l1.Next.Next = &_03.ListNode{Val:3}
+	l1 := &_03.ListNode{Val: 9}
+	l1.Next = &_03.ListNode{Val: 4}
+	l1.Next.Next = &_03.ListNode{Val: 3}
 	//349 + 465 = 814
 
-	l2 := &_03.ListNode{Val:5}
-	l2.Next = &_03.ListNode{Val:6}
-	l2.Next.Next = &_03.ListNode{Val:4}
+	l2 := &_03.ListNode{Val: 5}
+	l2.Next = &_03.ListNode{Val: 6}
+	l2.Next.Next = &_03.ListNode{Val: 4}
 
-	l3 := _03.AddTwoNumbers(l1,l2)
+	l3 := _03.AddTwoNumbers(l1, l2)
 	for {
 		fmt.Println(l3.Val)
 		if l3.Next == nil {
@@ -35,6 +35,4 @@ func main() {
 		}
 		l3 = l3.Next
 	}
-
-	fmt.Println(17%10)
 }
